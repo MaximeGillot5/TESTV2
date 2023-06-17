@@ -1,3 +1,7 @@
+form *{
+  margin-bottom: 20px;
+}
+
 form,
 .form-container {
   text-align: center;
@@ -23,6 +27,7 @@ form,
   padding-top: 10px;
   padding-bottom: 40px;
   border-radius: 30px;
+  margin-top: 20px;
 }
 .success,
 .error {
@@ -41,32 +46,47 @@ form,
 .error {
   background: red;
 }
-input {
-  height: 30px;
-  margin: 15px 15px;
+#name, #email {
+  height: 35px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   color: #29335c;
   font-size: 20px;
   justify-content: center;
+  width: 100%;
 }
+#name:focus, textarea:focus, #email:focus, select:focus {
+  outline: none !important;
+  box-shadow: none  !important;
+  border: 2px solid orangered;
+}
+
 textarea {
   height: 100px !important;
   resize: none;
   font-size: 18px !important;
+  margin: auto;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
 }
 
 #form .button:hover {
   cursor: pointer;
 }
 
+input {
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+  color: #29335c;
+  font-size: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 700px) {
   input {
-    width: 290px;
     margin: auto;
-  }
-  .success,
-  .error {
-    width: 200px;
   }
 }
