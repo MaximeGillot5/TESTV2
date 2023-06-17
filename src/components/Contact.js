@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import '../styles/Contact.css';
 
 const Contact = () => {
@@ -34,11 +33,11 @@ const Contact = () => {
     return (
         <div id='form' className="form-container">
             <form ref={form} onSubmit={sendEmail}>
-                <h3 id='contact-text'>Notre projet vous intéresse ? Contactez-nous !</h3>
+                <h3 id='contact-text'>Des suggestions ? Contactez-nous !</h3>
                 <label>Nom</label>
-                <input type="text" name="name" required autoComplete='off' />
+                <input id='name' type="text" name="name" required autoComplete='off' />
                 <label>Email</label>
-                <input type="email" name="email" required autoComplete='off' />
+                <input id='email' type="email" name="email" required autoComplete='off' />
                 <label>Message</label>
                 <textarea name="message" required />
                 <input className='button' type="submit" value="Envoyer" />

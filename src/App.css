@@ -68,7 +68,7 @@ body {
 
   #navbar #links{
     position: fixed;
-    top: -100vh;
+    top: -300vh;
     left: 0;
     height: 100%;
     width: 100%;
@@ -88,7 +88,7 @@ body {
   }
 
   #navbar .responsive_nav {
-    transform: translateY(100vh);
+    transform: translateY(300vh);
   }
 
   #navbar #links .nav-close-btn {
