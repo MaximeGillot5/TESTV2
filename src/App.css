@@ -113,3 +113,10 @@ body {
 #icons {
   font-size: 25px;
 }
+
+#footer .space-y-3{
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
