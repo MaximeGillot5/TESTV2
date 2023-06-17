@@ -193,6 +193,18 @@ body {
   text-align: justify;
 }
 
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
 /* ILLUSTRATION */
 
 #illustration {
@@ -218,6 +230,7 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 100%;
+    overflow: hidden;
   }
 
   #hero {
@@ -239,6 +252,12 @@ body {
     grid-area: 3 / 1 / 4 / 3;
     max-width: 100%;
   }
+  
+  #home-carousel .carousel-item.active{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }  
 
   #IconsText {
     grid-area: 4/1/4/4;
