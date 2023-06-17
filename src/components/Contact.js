@@ -39,7 +39,7 @@ const Contact = () => {
                 <label>Email</label>
                 <input id='email' type="email" name="email" required autoComplete='off' />
                 <label>Message</label>
-                <textarea name="message" required />
+                <textarea id='message' name="message" required />
                 <input className='button' type="submit" value="Envoyer" />
             </form>
             <div className="form-message"></div>
